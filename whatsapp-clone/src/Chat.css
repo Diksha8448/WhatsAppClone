@@ -22,7 +22,7 @@
 }
 .chat_body{
     flex: 1;
-    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21");
+    background-image: url("https://wallpapercave.com/wp/wp5149772.jpg");
     background-repeat: repeat;
     background-position: center;
     padding: 30px;
@@ -51,4 +51,29 @@
     margin-left: auto;
     background-color: #dcf8c6;
     
+}
+.chat_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+.chat_footer >form{
+    flex: 1;
+    display: flex;
+}
+.chat_footer > form >input{
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+.chat_footer >form >button{
+    display: none;
+}
+
+.chat_footer >.MuiSvgIcon-root{
+    padding: 10px;
+    color: gray;
 }
