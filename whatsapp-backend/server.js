@@ -35,7 +35,7 @@ app.get("/",(req,res)=>res.status(200).send("hello world"));
 app.get("/messages/sync",(req,res)=>{
     Messages.find((err,data)=>{
         if(err){
-            res.status(500).send(err);
+            res.status(500).send(err)
             .catch(function(err) {
         console.log('error: ', err);
     });
@@ -50,7 +50,7 @@ app.post("/messages/new",(req,res)=>{
     const dbMessage=req.body;
     Messages.create(dbMessage,(err,data)=>{
         if(err){
-            res.status(500).send(err);
+            res.status(500).send(err)
             .catch(function(err) {
         console.log('error: ', err);
     });
